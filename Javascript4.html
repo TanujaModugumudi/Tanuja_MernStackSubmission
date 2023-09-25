@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS_TASK4_21BCE9293</title>
+</head>
+<body>
+
+<button onclick="showDate()">SHOW DATE</button><br><br>
+<button onclick="showTime()">SHOW TIME</button>
+
+<p id="dateDisplay"></p>
+<p id="timeDisplay"></p>
+
+<script>
+  function showDate() {
+    const currentDate = new Date();
+    const formattedDate = currentDate.toDateString();
+    document.getElementById("dateDisplay").innerText = `Current Date: ${formattedDate}`;
+    document.getElementById("timeDisplay").innerText = ""; // Clear time display
+  }
+
+  function showTime() {
+    const currentTime = new Date();
+    const formattedTime = currentTime.toLocaleTimeString();
+    document.getElementById("timeDisplay").innerText = `Current Time: ${formattedTime}`;
+    document.getElementById("dateDisplay").innerText = ""; // Clear date display
+  }
+</script>
+
+</body>
+</html>

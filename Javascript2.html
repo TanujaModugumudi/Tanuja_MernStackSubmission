@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS_TASK2_21BCE9293</title>
+</head>
+<body>
+
+<h1>Task-2</h1>
+
+<script>
+  function sortStringAlphabetically(inputString) {
+    const sortedString = inputString.split('').sort().join('');
+    return sortedString;
+  }
+
+ 
+  const exampleString = 'university';
+  const sortedString = sortStringAlphabetically(exampleString);
+  document.write(`<p>Example string: ${exampleString}</p>`);
+  document.write(`<p>Expected Output: ${sortedString}</p>`);
+</script>
+
+</body>
+</html>
